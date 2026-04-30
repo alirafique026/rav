@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAV Group | Login</title>
+  <link rel="icon" href="assets/logo-rav.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="login-stack" aria-label="RAV Group login">
+      <a class="brand" href="https://ravgroup.in" aria-label="RAV Group home">
+        <img src="assets/logo-rav.png" alt="RAV Group">
+      </a>
+
+      <section class="welcome-card">
+        <h1>Welcome to RAV ERP</h1>
+        <p>
+          Please click here to login RAV ERP
+          <a href="https://erp.ravbiz.in" target="_blank" rel="noopener">Login to Old ERP</a>
+        </p>
+      </section>
+
+      <section class="signin-card" aria-labelledby="signin-title">
+        <h2 id="signin-title">RAV VIRTUAL OFFICE</h2>
+
+        <form id="loginForm" novalidate>
+          <div class="field">
+            <label for="loginId">Login ID</label>
+            <input id="loginId" name="loginId" type="text" placeholder="Enter your login ID" autocomplete="username">
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password">
+          </div>
+
+          <label class="remember">
+            <input id="rememberMe" name="rememberMe" type="checkbox" checked>
+            <span>Remember me</span>
+          </label>
+
+          <button class="login-button" type="submit">Log In</button>
+        </form>
+      </section>
+
+      <button class="forgot-link" type="button" id="forgotPassword">Forgot your password?</button>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="popup" role="dialog" aria-modal="true" aria-labelledby="popupTitle" hidden>
+    <div class="popup-card">
+      <h3 id="popupTitle">Message</h3>
+      <p id="popupMessage"></p>
+      <button type="button" id="popupClose">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
